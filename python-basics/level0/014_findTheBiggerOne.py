@@ -12,7 +12,7 @@ def solution(a, b):
     else:
         return ba
 
-a = int(input("Input a: "))
-b = int(input("Input b: "))
+a = int(input("a: "))
+b = int(input("b: "))
 result = solution(a, b)
 print(result)
