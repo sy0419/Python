@@ -23,7 +23,7 @@ print(solution("banana", "ana"))
 print(solution("banana", "nan"))
 print(solution("banana", "wxyz"))
 print(solution("banana", "abanana"))
-
+print("-----------------------------")
 print(solution2("banana", "ana"))
 print(solution2("banana", "nan"))
 print(solution2("banana", "wxyz"))
