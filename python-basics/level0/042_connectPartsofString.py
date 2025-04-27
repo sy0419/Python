@@ -14,4 +14,14 @@ def solution(my_string, parts):
         answer += string[s:e+1]
     return answer
 
+def solution2(my_strings, parts):
+    answer = ""
+    for i in range(len(my_strings)):
+        string = my_strings[i]
+        s, e = parts[i]
+        sub_str = string[s:e+1]
+        answer += sub_str
+    return answer
+
 print(solution(["progressive", "hamburger", "hammer", "ahocorasick"], [[0, 4], [1, 2], [3, 5], [7, 7]]))
+print(solution2(["progressive", "hamburger", "hammer", "ahocorasick"], [[0, 4], [1, 2], [3, 5], [7, 7]]))
