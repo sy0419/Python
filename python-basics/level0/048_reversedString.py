@@ -9,6 +9,8 @@ def solution(my_string, s, e):
     my_string = list(my_string)
     my_string[s:e+1] = reversed(my_string[s:e+1])
     return ''.join(my_string)
+# ''.join() is a way to combine the elements of a list into a single string
+# ''.join()은 리스트의 요소들을 하나의 문자열로 결합하는 방법
 
 print(solution("Progra21Sremm3", 6, 12))
 print(solution("Stanley1yelnatS", 4, 10))
