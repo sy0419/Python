@@ -5,3 +5,14 @@
 # 3 ≤ arr의 길이 ≤ 100'000
 # arr의 원소는 전부 1 또는 0입니다.
 
+def solution(arr, idx):
+    answer = -1
+    for i in range(idx, len(arr)):
+        if arr[i] == 1:
+            answer = i
+            break
+    return answer
+
+print(solution([0, 0, 0, 1], 1))
+print(solution([1, 0, 0, 1, 0, 0], 4))
+print(solution([1, 1, 1, 1, 0], 3))
