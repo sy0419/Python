@@ -15,10 +15,25 @@ def solution(arr):
         return arr[start:end+1]
     else:
         return [-1]
+    
+def solution2(arr):
+    answer = []
+    for i, num in enumerate(arr):
+        if num == 2:
+            answer.append(i)
+    if not answer:
+        return [-1]
+    else:
+        start_idx = min(answer)
+        end_idx = max(answer)
+        return arr[start_idx:end_idx+1]
 
 print(solution([1, 2, 1, 4, 5, 2, 9]))
 print(solution([1, 2, 1]))
 print(solution([1, 1, 1]))
 print(solution([1, 2, 1, 2, 1, 10, 2, 1]))
-
-# start = arr.index(2)
+print("----------------------------------")
+print(solution2([1, 2, 1, 4, 5, 2, 9]))
+print(solution2([1, 2, 1]))
+print(solution2([1, 1, 1]))
+print(solution2([1, 2, 1, 2, 1, 10, 2, 1]))
