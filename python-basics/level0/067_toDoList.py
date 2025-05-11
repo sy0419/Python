@@ -16,3 +16,4 @@ def solution(todo_list, finished):
     return answer
 
 print(solution(["problemsolving", "practiceguitar", "swim", "studygraph"], [True, False, True, False]))
+print(solution(["problemsolving", "practiceguitar", "swim", "studygraph"], [True, False, True, False]))
