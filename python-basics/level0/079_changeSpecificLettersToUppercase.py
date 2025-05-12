@@ -5,6 +5,5 @@
 def solution(myString, alp):
     return myString.replace(alp, alp.upper())
 
-
 print(solution("programmers", "p"))
 print(solution("lowercase", "x"))
