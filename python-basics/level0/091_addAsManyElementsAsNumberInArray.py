@@ -12,7 +12,7 @@ def solution(arr):
 def solution2(arr):
     x = []
     for num in arr:
-        x.extend([num] * num)  # num을 num개만큼 가진 리스트를 한 번에 붙이기
+        x.extend([num] * num)  
     return x
 
 print(solution([5, 1, 4]))
